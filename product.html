@@ -93,7 +93,9 @@
 									after: '
 											{Helper(file: 'helpers/klarna-osm/product-{Setting(name: 'klarna_osm_product')}')}
 										</div>',
-									variations: '{Setting(name: 'product_variations_style')}'
+									variations: '{Setting(name: 'product_variations_style')}',
+								  quantity: select,
+									values: 1
 								)}
 								<div class="ProductDesc">
 									{ProductShortDesc(
@@ -108,20 +110,6 @@
 										before:'
 											<details class="Accordion">
 												<summary><h3>{%ProductFullDesc}</h3></summary>',
-										after: '
-											</details>'
-									)}
-									{ProductShippingMethods(
-										before:'
-											<details class="Accordion ProductShippingMethods">
-												<summary>
-													<h3>{Text(code: 'ProductShippingCosts', or: '{%ShippingCosts}')}</h3>
-												</summary>
-												{Text(
-													code: 'ProductShippingCostsInfo',
-													before: '<p class="ProductShippingInformation">',
-													after: '</p>'
-												)}',
 										after: '
 											</details>'
 									)}

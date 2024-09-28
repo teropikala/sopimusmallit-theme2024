@@ -15,6 +15,13 @@
 			file: 'helpers/banners/banner-mainbanner'
 		)}
 		<div class="SiteBody Container">
+			<div class="HomePageIntro">
+				<p>
+					{%HomepageIntro}
+				</p>
+			</div>
+
+
 			<main class="SiteMain">
 				{Helper(
 					before: '
@@ -59,22 +66,6 @@
 						</div>'
 					)}
 				</div>
-				{News(
-					limit: '4',
-					before: '
-						<div class="Section">
-							<section class="NewsSection">
-								<h2 class="Subtitle">{%News}</h2>
-								<div class="Slider" data-slider>
-									{Helper(file: 'helpers/slider-buttons')}
-									<div class="NewsScrollList ScrollOverflow" data-slider-viewport>',
-					after: '
-									</div>
-								</div>
-							</section>
-						</div>',
-					helper: 'helpers/news-item'
-				)}
 			</main>
 		</div>
 		{Helper(file: 'helpers/footer')}

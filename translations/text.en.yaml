@@ -13,3 +13,17 @@ SearchInputPlaceholder: "Search products"
 ReCaptchaPrivacy: "This site is protected by reCAPTCHA and the Google <a href='https://policies.google.com/privacy' target='_blank'>Privacy Policy</a> and <a href='https://policies.google.com/terms' target='_blank'>Terms of Service</a> apply."
 Required: "Required"
 Optional: "Optional"
+
+URL:
+  TermsAndConditions: terms-conditions
+  ContactUs: contact-us
+  Instructions: instructions
+  PrivacyPolicy: privacy-policy
+  CookiePolicy: cookie-policy
+  Links: links
+
+GoogleTagManager: GTM-MFX8PSMX
+
+NewRelic: newrelic-browser-doctemplate.js
+
+ShopUrl: https://www.doctemplate.co.uk
