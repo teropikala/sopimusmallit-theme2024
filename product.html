@@ -106,13 +106,6 @@
 												{ProductFeatures}
 											</details>'
 									)}
-									{ProductFullDesc(
-										before:'
-											<details class="Accordion">
-												<summary><h3>{%ProductFullDesc}</h3></summary>',
-										after: '
-											</details>'
-									)}
 									{ProductBundles(
 										before:'
 											<details class="Accordion">
@@ -131,7 +124,18 @@
 								</div>
 							</div>
 						</div>
-					</article> 
+					</article>
+
+					<article>
+						<div class="ProductInformationSection">
+							{ProductFullDesc(
+							before:'
+							<h2>{%ProductInformation}</h2>',
+							after: ''
+							)}
+						</div>
+					</article>
+
 					{Helper(
 						before: '<section id="ProductReviews">',
 						after: '</section>',
