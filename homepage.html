@@ -46,15 +46,6 @@
 							{Helper(file: 'helpers/placeholders/product-list-{Setting(name: 'show_homepage_hotpicks')}')}
 						</div>'
 					)}
-					{TopSellers(
-						category: 'ALL',
-						type: 'ids',
-						limit: '1',
-						before: '<div class="Section" data-products="',
-						after: '">
-							{Helper(file: 'helpers/placeholders/product-list-{Setting(name: 'show_homepage_topsellers')}')}
-						</div>'
-					)}
 					{NewProducts(
 						category: 'ALL',
 						type: 'ids',
